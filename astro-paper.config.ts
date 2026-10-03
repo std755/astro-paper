@@ -23,10 +23,8 @@ export default defineAstroPaperConfig({
     showArchives: true,
     showBackButton: true,
     editPost: {
-      enabled: false,
-      #ture
-      url: "",
-      #https://github.com/satnaing/astro-paper/edit/main/
+      enabled: ture,
+      url: "https://github.com/satnaing/astro-paper/edit/main/",
     },
     search: "pagefind",
   },
