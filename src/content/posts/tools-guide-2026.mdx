@@ -1,0 +1,65 @@
+---
+author: Q
+pubDatetime: 2026-10-03T12:00:00Z
+title: 零成本打造高效个人小站：实用工具与部署指南
+slug: tools-guide-2026
+featured: true
+draft: false
+tags:
+  - 实用工具
+  - 建站指南
+  - 效率
+description: "本文总结了如何利用 Astro、Cloudflare 与各种免费在线工具，快速搭建高性能个人博客与工具库。"
+---
+import ResponsiveTable from '@/components/ResponsiveTable.astro';
+
+在这篇文章中，我们将探讨如何从零开始利用现代前端技术栈和免费云服务，打造一个兼具极速加载与优秀阅读体验的个人小站。
+
+<figure>
+  <img
+    src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    alt="团队讨论与效率工具使用场景"
+  />
+  <figcaption class="text-center">
+    Photo by{" "}
+    <a href="https://www.pexels.com/photo/photo-of-people-near-wooden-table-3183150/">Pexels</a>
+  </figcaption>
+</figure>
+
+## Table of contents
+
+## 为什么选择静态站点？
+
+传统博客（如 WordPress）需要购买服务器和数据库，不仅成本高，还需要经常维护安全性。而基于静态生成的博客具有以下巨大优势：
+
+1. **极速加载**：无数据库查询，直接传输预渲染好的 HTML。
+2. **零服务器成本**：可以免费部署到 Cloudflare Pages 或 GitHub Pages。
+3. **Markdown 写作**：专注于内容创作，支持 Git 版本控制。
+
+> [!TIP]
+> 静态站点通过 CDN 节点分发，全球访问延迟极低，非常适合作为个人技术沉淀与工具库。
+
+## 推荐的核心工具清单
+
+以下是搭建和维护本小站时用到的核心工具与技术：
+
+<ResponsiveTable variant="striped-minimal">
+
+| 工具名称 | 工具类型 | 核心用途 | 推荐指数 |
+| -------- | -------- | -------- | -------- |
+| **Astro** | 网页框架 | 构建极速静态网站，原生支持 MDX | ⭐⭐⭐⭐⭐ |
+| **Cloudflare Pages** | 云端托管 | 免费托管静态网页，支持全球 CDN 加速 | ⭐⭐⭐⭐⭐ |
+| **Pagefind** | 搜索引擎 | 无无需后端服务器，实现毫秒级全文检索 | ⭐⭐⭐⭐ |
+| **TinyPNG** | 图像优化 | 压缩文章插图，大幅提升页面载入速度 | ⭐⭐⭐⭐ |
+
+</ResponsiveTable>
+
+## 核心配置与部署步骤
+
+### 1. 本地项目创建
+
+首先在终端执行以下命令拉取 AstroPaper 模板：
+
+```bash
+# 使用 pnpm 初始化项目
+pnpm create astro@latest --template satnaing/astro-paper
