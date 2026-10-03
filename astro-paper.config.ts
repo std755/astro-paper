@@ -2,7 +2,7 @@ import { defineAstroPaperConfig } from "./src/types/config";
 
 export default defineAstroPaperConfig({
   site: {
-    url: "https://astro-paper.pages.dev/",
+    url: "https://astro-paper-dow.pages.dev/",
     title: "Q的科技与实用工具小站",
     description: "分享实用在线工具、技术探索与效率指南.",
     author: "Q",
