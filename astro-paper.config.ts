@@ -23,8 +23,8 @@ export default defineAstroPaperConfig({
     showArchives: true,
     showBackButton: true,
     editPost: {
-      enabled: false, // 修正拼写并暂时关闭，审核通过后再开
-      //url: "https://github.com/std755/astro-paper/edit/main/",
+      enabled: true, 
+      url: "https://github.com/std755/astro-paper/edit/main/",
     },
     search: "pagefind",
   },
