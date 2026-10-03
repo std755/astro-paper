@@ -6,7 +6,7 @@ export default defineAstroPaperConfig({
     title: "Q的科技与实用工具小站",
     description: "分享实用在线工具、技术探索与效率指南.",
     author: "Q",
-    profile: "https://satna.ing",
+    profile: "https://astro-paper-dow.pages.dev/",
     ogImage: "default-og.jpg",
     lang: "zh-CN",
     timezone: "Asia/Shanghai",
@@ -23,23 +23,18 @@ export default defineAstroPaperConfig({
     showArchives: true,
     showBackButton: true,
     editPost: {
-      enabled: ture,
-      url: "https://github.com/satnaing/astro-paper/edit/main/",
+      enabled: false, // 修正拼写并暂时关闭，审核通过后再开
+      url: "https://github.com/std755/astro-paper/edit/main/",
     },
     search: "pagefind",
   },
   socials: [
-    { name: "github",   url: "https://github.com/satnaing/astro-paper" },
-    { name: "x",        url: "https://x.com/username" },
-    { name: "linkedin", url: "https://www.linkedin.com/in/username/" },
+    { name: "github",   url: "https://github.com/std755/astro-paper" },
     { name: "mail",     url: "mailto:yourmail@gmail.com" },
   ],
   shareLinks: [
-    { name: "whatsapp", url: "https://wa.me/?text=" },
-    { name: "facebook", url: "https://www.facebook.com/sharer.php?u=" },
     { name: "x",        url: "https://x.com/intent/post?url=" },
     { name: "telegram", url: "https://t.me/share/url?url=" },
-    { name: "pinterest", url: "https://pinterest.com/pin/create/button/?url=" },
     { name: "mail",     url: "mailto:?subject=See%20this%20post&body=" },
   ],
 });
