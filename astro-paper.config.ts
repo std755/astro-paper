@@ -8,7 +8,7 @@ export default defineAstroPaperConfig({
     author: "Q",
     profile: "https://astro-paper-dow.pages.dev/",
     ogImage: "default-og.jpg",
-    lang: "zh-CN",
+    lang: "en",
     timezone: "Asia/Shanghai",
     dir: "ltr",
   },
